@@ -1,9 +1,10 @@
-# Android_Architecture_Templates
+# Android-Architecture-Templates-Generator
 
-Android Architecture Templates is a program for generating Android architecture template code
+`Android-Architecture-Templates-Generator` is a program for generating Android architecture template code.
 
 ## Usage
-`Android_Architecture_Templates` Requires [python3](https://www.python.org/downloads/) environment
+
+`Android-Architecture-Templates-Generator` requires [python3](https://www.python.org/downloads/) environment.
 
 ```
 python3 TemplateGenerator.py -p `Your.package.name` -n `Your module name` -t `Using Template Folder`
@@ -12,10 +13,13 @@ python3 TemplateGenerator.py -p `Your.package.name` -n `Your module name` -t `Us
 | Options               | Description                               |
 | :---------------------| :-----------------------------------------|
 | -t, --template_dir    | templatedir (VIPERTemplates ...)          |
-| -p, --package_name    | package_name (com.climax.template.Test)   |
+| -p, --package_name    | package_name (com.climax.template. Test)   |
 | -n, --module_name     | module_name (Test, Login ...)             |
+
+## Demo
+
+![](https://raw.githubusercontent.com/nickhuangcyh/Android-Architecture-Templates-Generator/master/Resources/demo.gif)
 
 ## More Documentation
 
-`python3 TemplateGenerator -h` or `python3 TemplateGenerator --help`
-
+`python3 TemplateGenerator.py -h` or `python3 TemplateGenerator.py --help`
