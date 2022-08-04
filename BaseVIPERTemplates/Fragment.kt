@@ -28,13 +28,15 @@ class ${module_name}Fragment : BaseFragment<${module_name}Contract.Presenter>(),
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_${lowercase_module_name}, container, false)
-        setupView(view)
-
-        presenter?.onCreateView()
-
-        return view
+        return inflater.inflate(R.layout.fragment_${lowercase_module_name}, container, false)
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        setupView(view)
+    }
+
     //endregion
 
     //region Private Method

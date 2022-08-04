@@ -21,6 +21,13 @@ class ${module_name}Fragment : BaseFragment(), ${module_name}Contract.View {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_${lowercase_module_name}, container, false)
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        setupView(view)
+    }
+
     //endregion
 
     //region ${module_name}Contract.View

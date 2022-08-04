@@ -26,6 +26,10 @@ class ${module_name}Fragment : BaseFragment<${module_name}Contract.Presenter>(),
         return inflater.inflate(R.layout.fragment_${module_name}, container, false)
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+    }
+
     override fun onStart() {
         super.onStart()
         presenter?.onStart()
