@@ -14,12 +14,5 @@ class ${module_name}Presenter(override var view: ${module_name}Contract.View?,
     override fun onCreate() {
         interactor?.output = this
     }
-
-    override fun onDestory() {
-        view = null
-        router = null
-        interactor?.output = null
-        interactor = null
-    }
     //endregion
 }
